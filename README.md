@@ -16,12 +16,37 @@
 
 
 ## Contents
+- [Abstract](#abstract)
+- [Technical Description](#technical-description)
+- [Requirements](#requirements)
+    - [Packages](#packages)
+- [How to run the Script](#how-to-run-the-script)
+- [Input Data](#input-data)
+    - [Identified Middle-Down Peptides](#identified-middle-down-peptides)
+    - [Fasta File](#fasta-file)
+- [Graphical User Interface](#graphical-user-interface)
+    - [Initialization](#initialization)
+    - [Data Analysis](#data-analysis)
+    - [Visualization](#visualization)
+- [Data Sets for Testing](#data-sets-for-testing)
+- [Output](#output)
+    - [Potential cleavage analysis of subsequence proteoforms](#potential-cleavage-analysis-of-subsequence-proteoforms)
+    - [Cleavage Specificity](#cleavage-specificity)
+    - [Analyze Potential Cleavage Fasta File](#analyze-potential-cleavage-fasta-file)
+    - [N-terminal Methionine Excision](#n-terminal-methionine-excision)
+    - [Proteoform Information: C- and N-terminal peptides](#proteoform-information-c--and-n-terminal-peptides)
+    - [Visualization of Identified Peptides for Specific Proteins](#visualization-of-identified-peptides-for-specific-proteins)
+- [Troubleshooting](#troubleshooting)
+- [Contributions](#contributions)
+- [Changelog](#changelog)
+- [References](#references)
+- [How to cite](#how-to-cite)
+- [License](#license)
 
 
 
-[TOC]
 
-## Introduction
+## Abstract
 
 Middle-down proteomics aims to identify peptides in the range of 3-10 kDa. The tool analyzes the identified middle-down peptides and graphically displays various properties . The following analyses can be performed:
 
@@ -72,7 +97,7 @@ $ python GUI.py
 
 ## Input Data
 
-### Identified Peptides 
+### Identified Middle-Down Peptides 
 
 The tool allows different input formats for the identified proteoforms: 
 
@@ -231,7 +256,7 @@ The tool identifies the number of annotated, N-terminal, C-terminal and N- and C
 
 
 
-## Trouble shooting
+## Troubleshooting
 
 
 
@@ -252,10 +277,11 @@ AT, Many ideas for data visualization
 - v1.0.0 (February 2023) First release (based on "Potential Cleavage Analyzer")
 
 
+## References
 
 
 
- ## How to cite
+## How to cite
 
  
 
