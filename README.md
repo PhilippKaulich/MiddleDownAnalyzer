@@ -6,15 +6,6 @@
 </p>
 
 
-\\\\ To-do
-
-- re-writing for middle-down analysis!!
-
-
-
-
-
-
 ## Contents
 - [Abstract](#abstract)
 - [Technical Description](#technical-description)
