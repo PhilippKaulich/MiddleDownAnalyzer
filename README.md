@@ -113,7 +113,7 @@ Fasta file, which was also used for database search. If database search was perf
 
 ## Graphical User Interface 
 
-<center> <img src="Various\GUI.png" style="zoom:100%" alt="Graphical User Interface"/></center>
+<center> <img src="Various\GUI.PNG" style="zoom:100%" alt="Graphical User Interface"/></center>
 
 **Figure 2**: Graphical User Interface.
 
@@ -168,13 +168,13 @@ As soon as 'Initalization' is pressed, the analysis starts. The progress of the 
 
 The tool identifies the X and X’ cleavage site of identified peptides, whereby X represents the N-terminal and X’ the C-terminal cleavage position, respectively. 
 
-![Result_Heatmap](Various\Result_Heatmap.png)
+<img src="Various\Result_Heatmap.png" style="zoom:70%" alt="Result Heatmap"/>
 
 **Figure 3**: Potential cleavage analysis plot. The heatmap shows the potential cleavage sites between two amino acids determined by the peptides, with the X site shown vertically and the X' site shown horizontally. The histograms show the total number of amino acids determined at the X' site (right) or at the X site (top). 
 
 
 
-![CMD_Output](Various\CMD_Output.PNG)
+<img src="Various\CMD_Output.PNG" style="zoom:70%" alt="CMD Output"/>
 
 
 
@@ -184,9 +184,11 @@ The tool identifies the X and X’ cleavage site of identified peptides, whereby
 
 ### Cleavage Specificity 
 
-<img src="Various\Result_Specificity.png" style="zoom:70%" alt="Protease Specificity"/>
+The tool determines the specificity of the middle-down peptides, depending on the selected protease. For full specific peptides, both the N- and C-termini, for semi-specific peptides either the N- or the C-termini, and for un-specific none of the termini can be explained by the protease specificty. 
 
-**Figure 5**: 
+<img src="Various\Result_Specificity.png" style="zoom:20%" alt="Protease Specificity" width="50%"/>
+
+**Figure 5**: Protease Specificity. 
 
 
 
@@ -194,9 +196,9 @@ The tool identifies the X and X’ cleavage site of identified peptides, whereby
 
 The tool calculates all theoretical possible cleavages of all proteins in the database (that is, it basically calculates the number of all dipeptide combinations in the database). 
 
-<img src="Various\Result_AnalyzeFastaFile.png" style="zoom:95%" alt="Result_Methionin_Cleavage"/>
+<img src="Various\Result_AnalyzeFastaFile.png" style="zoom:75%" alt="Result_Methionin_Cleavage"/>
 
-**Figure 5**: Theoretical possible cleavage events in the entire fasta file. 
+**Figure 6**: Theoretical possible cleavage events in the entire fasta file. 
 
 
 
@@ -206,51 +208,42 @@ The tool identifies all peptides whose N-terminus is not truncated, or where onl
 
 <img src="Various\Result_Methionin_Cleavage_relativeAndAbsolut.png" style="zoom:57%" alt="Result_Methionin_Cleavage"/>
 
-**Figure 6**: Plots displaying the N-terminal methionine cleavage excision properties. A) bar plot showing the count of amino acids at the N-term if the start methionine is cleaved (red bars, Met cleaved) and in the position after the methionine if the start methionine is not cleaved (black bars, Met not-cleaved). B) shows the percentage of methionine cleavage before a given amino acid, with the amino acid radius shown on the x-axis.  
+**Figure 7**: Plots displaying the N-terminal methionine cleavage excision properties. A) bar plot showing the count of amino acids at the N-term if the start methionine is cleaved (red bars, Met cleaved) and in the position after the methionine if the start methionine is not cleaved (black bars, Met not-cleaved). B) shows the percentage of methionine cleavage before a given amino acid, with the amino acid radius shown on the x-axis.  
 
 
 
 ### Proteoform Information: C- and N-terminal peptides 
 
-The tool identifies the number of annotated, N-terminal, C-terminal and N- and C-terminal truncation proteoforms. 
-
-
-
-
+The tool identifies the number of annotated (full-length), N-terminal truncated, C-terminal truncated, and N- and C-terminal truncated proteoforms. 
 
 <img src="Various\Result_Truncation_PieChart.png" style="zoom:70%" alt="Result_ProteoformVisualization"/>
 
-**Figure 7**: Percentage of identified C-terminal, N-terminal, C- and N-terminal or non-truncated (full length) proteoforms displayed as a pie chart. 
+**Figure 8**: Percentage of identified C-terminal, N-terminal, C- and N-terminal or non-truncated (full length) proteoforms displayed as a pie chart. 
 
 
 
 ### Visualization of Identified Peptides for Specific Proteins
 
-
+The tool visualizes the identified peptides of a given protein accession in terms of their localization within the protein sequence and their specificity (fully specific, semispecific N-terminal, semispecific C-terminal, non-specific).  
 
 <img src="Various\Result_SeqCovVisualization_1.png" style="zoom:75%" alt="Result_SequenceCoverageVisualization"/>
 
-**Figure 8**: Visualization of the identified peptides compared to the full-length protein. The x-axis shows the amino acid position of the full-length protein (as deposited in the fasta file). The identified peptide are plotted as bars along the y-axis. The color of each bar represents the specificity of the identified peptide: full specific (black), only N-terminal specific (orange), only C-terminal specific (red), unspecific (blue). 
-
-
-
+**Figure 9**: Visualization of the identified peptides compared to the full-length protein. The x-axis shows the amino acid position of the full-length protein (as deposited in the fasta file). The identified peptide are plotted as bars along the y-axis. The color of each bar represents the specificity of the identified peptide: full specific (black), only N-terminal specific (orange), only C-terminal specific (red), unspecific (blue). 
 
 
 <img src="Various\Result_ProteoformVisualization_CMD.png" style="zoom:60%" alt="Result_ProteoformVisualization"/>
 
-**Figure  9**: Visualization of the identified peptides compared to the full-length protein in the command line window. The first row shows the full-length protein  (as deposited in the fasta file) and the following rows show the identified peptides. The columns show 1) the index of teh start amino acid of the identified peptide (compared to the full-length protein), 2) the index of teh end amino acid of the peptide, 3) the peptide sequence, and 4) the number of associated PSMs. 
+**Figure  10**: Visualization of the identified peptides compared to the full-length protein in the command line window. The first row shows the full-length protein  (as deposited in the fasta file) and the following rows show the identified peptides. The columns show 1) the index of teh start amino acid of the identified peptide (compared to the full-length protein), 2) the index of teh end amino acid of the peptide, 3) the peptide sequence, and 4) the number of associated PSMs. 
 
 
 
+### Calculation of the Sequence Coverage for all Proteins within the Database
 
-
-
-
-
+The tool assigns the identified peptides to proteins in the database (caution: this is not a sophisticated protein inference! The peptides can be assigned to multiple proteins), determines the number of assigned peptides, the sequence coverage and visualizes the position of the peptides in the protein sequence.  
 
 <img src="Various\Result_SequenceCoverage.png" style="zoom:80%" alt="Result_ProteoformVisualization"/>
 
-**FIgure ?**: 
+**FIgure 11**: Table Sequence Coverage. 
 
 
 
@@ -261,13 +254,11 @@ The tool identifies the number of annotated, N-terminal, C-terminal and N- and C
 
 
 
-
 ## Contributions 
 
 PTK, Python script written, basic ideas 
 
 AT, Many ideas for data visualization 
-
 
 
 
