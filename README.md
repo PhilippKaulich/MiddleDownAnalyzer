@@ -207,7 +207,7 @@ The tool identifies all peptides whose N-terminus is not truncated, or where onl
 
 The tool identifies the number of annotated (full-length), N-terminal truncated, C-terminal truncated, and N- and C-terminal truncated proteoforms. 
 
-<img src="Various\Result_Truncation_PieChart.png" style="zoom:70%" alt="Result_ProteoformVisualization"/>
+<img src="Various\Result_Truncation_PieChart.png" style="zoom:70%" alt="Result_ProteoformVisualization" width="50%"/>
 
 **Figure 8**: Percentage of identified C-terminal, N-terminal, C- and N-terminal or non-truncated (full length) proteoforms displayed as a pie chart. 
 
