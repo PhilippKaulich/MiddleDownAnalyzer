@@ -18,7 +18,8 @@ import ReadProteoforms
 from Settings import Settings
 from MyPlots import create_cleavage_site_plot, truncations_pi_chart, \
     plot_methionin_cleaveage, plot_methionin_cleavaege_absolut, \
-    subsequence_visualization, protease_specificity_pi_chart
+    subsequence_visualization, protease_specificity_pi_chart, \
+    create_histogram_missed_cleavages
 
 
 # enable scaling high DPI mode 
@@ -93,6 +94,8 @@ class Ui(QtWidgets.QMainWindow):
         self.potential_cleavage, self.accession_proteoforms, self.truncations, \
         self.met_cleav, self.protease_specificity, self.data_icelogo_df = \
                 self.a.find_subsequence_termini(proteoforms, prsms)
+            
+        self.missed_cleavages = self.a.analyze_missed_cleavages(proteoforms)
                 
 
  
@@ -114,9 +117,12 @@ class Ui(QtWidgets.QMainWindow):
         # self.combo_accessions.addItems(te)
         
     
+    def plot_missed_cleavages(self):
+        create_histogram_missed_cleavages(self.missed_cleavages)
+        
+    
     def plot_potential_cleavage_site(self):
         create_cleavage_site_plot(self.potential_cleavage)
-        print(self.potential_cleavage)
     
     
     def plot_truncations(self):

@@ -22,7 +22,7 @@ import pandas as pd
 from collections import Counter    
 from matplotlib.ticker import MaxNLocator, FormatStrFormatter
 from matplotlib.cm import ScalarMappable
-from adjustText import adjust_text
+# from adjustText import adjust_text
 import matplotlib.ticker as mtick
 
 
@@ -96,6 +96,23 @@ def create_cleavage_site_plot(df):
     
     plt.show()
     
+    
+    
+def create_histogram_missed_cleavages(missed_cleavages_list):
+        # An "interface" to matplotlib.axes.Axes.hist() method
+    plt.figure()
+    b = [i for i in range(min(missed_cleavages_list), max(missed_cleavages_list) + 1)]
+    n, bins, patches = plt.hist(x=missed_cleavages_list, bins=b, color='#0504aa',
+                                alpha=0.7, rwidth=0.85)
+    # plt.grid(axis='y', alpha=0.75)
+    plt.xlabel('#Missed Cleavages')
+    plt.ylabel('#Middle-Down Peptides')
+    # plt.title('Missed Cleavages')
+    # plt.text(23, 45, r'$\mu=15, b=3$')
+    plt.show()
+    print(list(zip(bins,n)))
+    # Set a clean upper y-axis limit.
+    # plt.ylim(ymax=np.ceil(maxfreq / 10) * 10 if maxfreq % 10 else maxfreq + 10)
     
     
 

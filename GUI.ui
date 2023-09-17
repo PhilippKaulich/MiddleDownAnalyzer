@@ -384,7 +384,7 @@
       </font>
      </property>
      <property name="text">
-      <string>Methionine Cleavage</string>
+      <string>Missed Cleavages</string>
      </property>
      <property name="autoDefault">
       <bool>false</bool>
@@ -638,8 +638,8 @@ Sequence Coverage</string>
    <slot>show_sequence_coverage()</slot>
    <hints>
     <hint type="sourcelabel">
-     <x>298</x>
-     <y>352</y>
+     <x>226</x>
+     <y>310</y>
     </hint>
     <hint type="destinationlabel">
      <x>930</x>
@@ -654,28 +654,12 @@ Sequence Coverage</string>
    <slot>plot_specificity()</slot>
    <hints>
     <hint type="sourcelabel">
-     <x>141</x>
-     <y>362</y>
+     <x>479</x>
+     <y>310</y>
     </hint>
     <hint type="destinationlabel">
      <x>194</x>
      <y>397</y>
-    </hint>
-   </hints>
-  </connection>
-  <connection>
-   <sender>button_export_4</sender>
-   <signal>clicked()</signal>
-   <receiver>PotentialCleavageAnalyzer</receiver>
-   <slot>plot_methionine_cleavage()</slot>
-   <hints>
-    <hint type="sourcelabel">
-     <x>590</x>
-     <y>302</y>
-    </hint>
-    <hint type="destinationlabel">
-     <x>840</x>
-     <y>211</y>
     </hint>
    </hints>
   </connection>
@@ -687,7 +671,7 @@ Sequence Coverage</string>
    <hints>
     <hint type="sourcelabel">
      <x>900</x>
-     <y>282</y>
+     <y>321</y>
     </hint>
     <hint type="destinationlabel">
      <x>716</x>
@@ -735,7 +719,7 @@ Sequence Coverage</string>
    <hints>
     <hint type="sourcelabel">
      <x>115</x>
-     <y>268</y>
+     <y>321</y>
     </hint>
     <hint type="destinationlabel">
      <x>187</x>
@@ -759,6 +743,22 @@ Sequence Coverage</string>
     </hint>
    </hints>
   </connection>
+  <connection>
+   <sender>button_export_4</sender>
+   <signal>clicked()</signal>
+   <receiver>PotentialCleavageAnalyzer</receiver>
+   <slot>plot_missed_cleavages()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>386</x>
+     <y>370</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>670</x>
+     <y>548</y>
+    </hint>
+   </hints>
+  </connection>
  </connections>
  <slots>
   <slot>load_fasta_file()</slot>
@@ -770,9 +770,10 @@ Sequence Coverage</string>
   <slot>analyze_accession()</slot>
   <slot>plot_potential_cleavage_site()</slot>
   <slot>plot_truncations()</slot>
-  <slot>plot_methionine_cleavage()</slot>
   <slot>show_sequence_coverage()</slot>
   <slot>plot_specificity()</slot>
   <slot>export_icelogo_data()</slot>
+  <slot>plot_missed_cleavages()</slot>
+  <slot>plot_methionine_cleavages()</slot>
  </slots>
 </ui>

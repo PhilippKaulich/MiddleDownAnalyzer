@@ -181,6 +181,22 @@ class AnalyzeCleavageSites:
         elif not n_term and not c_term: spec = "Un-specific"
         return spec
 
+    def _count_missed_cleavages(self, sequence, specificity=["E"]):
+        c = Counter(sequence[:-1])
+        count = 0
+        for aa in specificity:
+            count += c[aa]
+        return count
+    
+    def analyze_missed_cleavages(self, sequences, specificity=["E"]):
+        missed_cleavages_list = []
+        for sequence in sequences:
+            count_missed_cleavage = self._count_missed_cleavages(sequence, specificity)
+            missed_cleavages_list.append(count_missed_cleavage)
+        return missed_cleavages_list
+            
+            
+        
 
 
     def find_subsequence_termini(self, sequences, prsms): 
