@@ -195,11 +195,11 @@ The tool calculates all theoretical possible cleavages of all proteins in the da
 
 ### N-terminal Methionine Excision
 
-The tool identifies all peptides whose N-terminus is not truncated, or where only the start methionine is cleaved. The influence of the following amino acid and its size on methionine cleavage is analyzed. 
+The tool analyzes the number of missed cleavages and displays them as a histogram. The missed cleavages are calculated based on the enzyme specificity. For example, for GluC digestion in ammonium bicarbonate buffer, all glutamate residues present in the peptide sequence are counted, except for the glutamate residue at the C-terminus. 
 
-<img src="Various\Result_Methionin_Cleavage_relativeAndAbsolut.png" style="zoom:57%" alt="Result_Methionin_Cleavage"/>
+<img src="Various\Results_MissedCleavages.png" style="zoom:57%" alt="Results_MissedCleavages"/>
 
-**Figure 7**: Plots displaying the N-terminal methionine cleavage excision properties. A) bar plot showing the count of amino acids at the N-term if the start methionine is cleaved (red bars, Met cleaved) and in the position after the methionine if the start methionine is not cleaved (black bars, Met not-cleaved). B) shows the percentage of methionine cleavage before a given amino acid, with the amino acid radius shown on the x-axis.  
+**Figure 7**: Histogram of missed cleavages of the identified peptides.   
 
 
 
