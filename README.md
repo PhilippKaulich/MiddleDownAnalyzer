@@ -24,7 +24,7 @@
     - [Potential cleavage analysis of subsequence proteoforms](#potential-cleavage-analysis-of-subsequence-proteoforms)
     - [Cleavage Specificity](#cleavage-specificity)
     - [Analyze Potential Cleavage Fasta File](#analyze-potential-cleavage-fasta-file)
-    - [N-terminal Methionine Excision](#n-terminal-methionine-excision)
+    - [Number of Missed Cleavages](#number-of-missed-cleavages)
     - [Proteoform Information: C- and N-terminal peptides](#proteoform-information-c--and-n-terminal-peptides)
     - [Visualization of Identified Peptides for Specific Proteins](#visualization-of-identified-peptides-for-specific-proteins)
 - [Troubleshooting](#troubleshooting)
@@ -193,7 +193,7 @@ The tool calculates all theoretical possible cleavages of all proteins in the da
 
 
 
-### N-terminal Methionine Excision
+### Number of Missed Cleavages
 
 The tool analyzes the number of missed cleavages and displays them as a histogram. The missed cleavages are calculated based on the enzyme specificity. For example, for GluC digestion in ammonium bicarbonate buffer, all glutamate residues present in the peptide sequence are counted, except for the glutamate residue at the C-terminus. 
 
